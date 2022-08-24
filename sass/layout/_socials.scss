@@ -1,0 +1,32 @@
+.socials {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  padding-bottom: 30px;
+}
+
+.socials__link {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    background-color: #2196f3;
+    fill: #ffffff;
+  }
+}
+.socials__link--color-light {
+  fill: #afb1b8;
+}
+
+.socials__link--color-dark {
+  background-color: rgba(255, 255, 255, 0.1);
+  fill: #ffffff;
+}
