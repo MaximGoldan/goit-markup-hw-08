@@ -1,6 +1,9 @@
 /* Чем мы занимаемся */
 .work {
   padding-bottom: 95px;
+  @media screen and (max-width: 1200px) {
+    display: none;
+  }
 }
 .work__title {
   font-weight: 700;

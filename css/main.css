@@ -403,12 +403,21 @@ body {
   margin-left: 50px;
 }
 
-.contacts__list {
-  display: flex;
-  margin-left: auto;
-}
 .contacts__list .contacts__item:not(:last-child) {
   margin-right: 50px;
+}
+@media screen and (min-width: 768px) {
+  .contacts__list {
+    flex-direction: column;
+    margin-left: 85px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .contacts__list {
+    flex-direction: row;
+    display: flex;
+    margin-left: auto;
+  }
 }
 
 /* header ссылки */
@@ -460,6 +469,12 @@ body {
   color: #2196f3;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+@media screen and (min-width: 768px) {
+  .contacts__conect {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+}
 
 /* Эфект ховер навидение */
 /* подчеркивание   */
@@ -493,15 +508,21 @@ body {
 
 .hero__title {
   font-weight: 900;
-  font-size: 44px;
+  font-size: 26px;
   line-height: 1.36;
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: #ffffff;
-  width: 700px;
+  width: 360px;
   margin: 0 auto;
   margin-bottom: 30px;
+}
+@media screen and (min-width: 1200px) {
+  .hero__title {
+    width: 673px;
+    font-size: 44px;
+  }
 }
 
 .hero__but {
@@ -598,6 +619,11 @@ body {
 /* Чем мы занимаемся */
 .work {
   padding-bottom: 95px;
+}
+@media screen and (max-width: 1200px) {
+  .work {
+    display: none;
+  }
 }
 
 .work__title {
@@ -788,15 +814,31 @@ body {
 /* Подвал */
 .footer {
   background: #2f303a;
-  padding-top: 60px;
-  padding-bottom: 60px;
-}
-.footer .container {
-  flex-wrap: wrap;
   text-align: center;
+  padding-top: 60px;
 }
-.footer .logo__futer {
-  display: block;
+
+@media screen and (min-width: 768px) {
+  .contacts-futer {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 75px;
+    margin-right: 90px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container-futer {
+    text-align: start;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .contacts-futer {
+    margin: 0;
+  }
+}
+.logo__futer {
   margin-bottom: 20px;
 }
 
@@ -837,7 +879,13 @@ body {
 
 /* присоиденяйтесь */
 .join__content {
-  text-align: center;
+  margin-bottom: 40px;
+}
+@media screen and (min-width: 1200px) {
+  .join__content {
+    margin-right: 12px;
+    margin-left: 70px;
+  }
 }
 
 .join__title {
@@ -851,6 +899,12 @@ body {
 }
 
 /* Форма в подвале футере */
+@media screen and (min-width: 1200px) {
+  .form-futer {
+    display: flex;
+  }
+}
+
 .form-futer__title {
   font-weight: 700;
   font-size: 14px;
@@ -890,11 +944,23 @@ body {
 .form-futer:focus-within > .form-futer__input {
   border: 1px solid #2196f3;
 }
+@media screen and (min-width: 768px) {
+  .form-futer__input {
+    width: 450px;
+    margin-left: 152px;
+    margin-right: 166px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .form-futer__input {
+    margin-right: 12px;
+    margin-left: 0px;
+    width: 358px;
+  }
+}
 
 .form-futer__btn {
-  width: 200px;
   height: 50px;
-  display: inline-block;
   outline: transparent;
   cursor: pointer;
   align-items: center;
@@ -913,6 +979,7 @@ body {
 .form-btn {
   position: relative;
   display: inline-block;
+  margin-bottom: 60px;
 }
 
 .form-icon {
@@ -924,6 +991,10 @@ body {
 }
 
 /* портфолио */
+.portf-non {
+  display: none;
+}
+
 .portfolio {
   padding-top: 95px;
   padding-bottom: 95px;
@@ -931,15 +1002,18 @@ body {
 
 .list-nav {
   display: flex;
-  justify-content: center;
-  margin-bottom: 50px;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
 }
 .list-nav .list-nav__item:not(:last-child) {
   margin-right: 8px;
+  margin-bottom: 15px;
 }
-
-.portf-non {
-  display: none;
+@media screen and (min-width: 768px) {
+  .list-nav {
+    justify-content: center;
+    margin-bottom: 50px;
+  }
 }
 
 .list-nav__btn {
@@ -967,12 +1041,21 @@ body {
   flex-wrap: wrap;
   padding: 0;
   list-style: none;
-  margin: -15px;
+  gap: 30px;
 }
 
 .portfolio__item {
   width: 370px;
-  margin: 15px;
+}
+@media screen and (min-width: 768px) {
+  .portfolio__item {
+    width: calc((100% - 30px) / 2);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .portfolio__item {
+    width: calc((100% - 90px) / 3);
+  }
 }
 
 .portfolio__tumb {

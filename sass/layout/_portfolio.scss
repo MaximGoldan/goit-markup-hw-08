@@ -1,4 +1,7 @@
 /* портфолио */
+.portf-non {
+  display: none;
+}
 
 .portfolio {
   padding-top: 95px;
@@ -6,15 +9,17 @@
 }
 .list-nav {
   display: flex;
-  justify-content: center;
-  margin-bottom: 50px;
+  flex-wrap: wrap;
+  // gap: 8px;
+  margin-bottom: 40px;
   & .list-nav__item:not(:last-child) {
     margin-right: 8px;
+    margin-bottom: 15px;
   }
-}
-
-.portf-non {
-  display: none;
+  @media screen and (min-width: 768px) {
+    justify-content: center;
+    margin-bottom: 50px;
+  }
 }
 
 .list-nav__btn {
@@ -47,12 +52,19 @@
   flex-wrap: wrap;
   padding: 0;
   list-style: none;
-  margin: -15px;
+  // margin: -15px;
+  gap: 30px;
 }
 
 .portfolio__item {
   width: 370px;
-  margin: 15px;
+  // margin: 15px;
+  @media screen and (min-width: 768px) {
+    width: calc((100% - 30px) / 2);
+  }
+  @media screen and (min-width: 1200px) {
+    width: calc((100% - 90px) / 3);
+  }
 }
 .portfolio__tumb {
   position: relative;
