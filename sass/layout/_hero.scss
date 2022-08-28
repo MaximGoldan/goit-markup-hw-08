@@ -24,9 +24,13 @@
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: #ffffff;
-  width: 360px;
+
   margin: 0 auto;
   margin-bottom: 30px;
+
+  @media screen and (min-width: 480px) {
+    width: 360px;
+  }
 
   @media screen and (min-width: 1200px) {
     width: 673px;
