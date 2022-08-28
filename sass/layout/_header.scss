@@ -6,10 +6,6 @@
 }
 
 .container-nav {
-  // display: flex;
-  // align-items: center;
-  // justify-content: space-between;
-  // width: 100%;
 }
 .navigasion {
   display: flex;
@@ -104,50 +100,22 @@
 
 // --------------- contacts ---------------
 
-.contacts__list {
-  // @media screen and (min-width: 768px) {
-  //   display: flex;
-  //   margin-left: auto;
-  //   & .contacts__item:not(:last-child) {
-  //     margin-right: 50px;
-  //   }
-  // }
-
-  // @media screen and (min-width: 480px) {
-  //   display: none;
-  // }
-
-  // @media screen and (min-width: 1200px) {
-  //   flex-direction: row;
-  //   display: flex;
-  //   margin-left: auto;
-  // }
-}
-
-/* header ссылки */
-
-.navigasion__list {
-}
-
-/* header емеил и тел */
+/* header ссылки емеил и тел */
 
 .contacts__list {
   @media screen and (min-width: 768px) {
     display: flex;
-    flex-direction: column;
+    flex-direction: column-reverse;
     margin-left: 85px;
-    justify-content: end;
+    // justify-content: end;
+  }
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    flex-direction: row;
+    // gap: 30px;
   }
 }
 
-// @media screen and (min-width: 768px) {
-//   display: flex;
-//   margin-left: auto;
-
-//   //   & .contacts__item:not(:last-child) {
-//   //   margin-right: 50px;
-//   //  }
-// }
 .contacts__conect {
   display: flex;
   align-items: center;
@@ -221,6 +189,7 @@
   line-height: 1.2;
   letter-spacing: 0.02em;
 }
+
 /* Эфект ховер навидение */
 
 // .header-mail:hover,

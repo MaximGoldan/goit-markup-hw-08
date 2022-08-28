@@ -6,6 +6,9 @@ body {
 
   background: #ffffff;
 }
+body.modal-open {
+  overflow: hidden;
+}
 .list {
   list-style: none;
 }
