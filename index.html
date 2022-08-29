@@ -20,15 +20,16 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   </head>
-  <body modal-open>
+  <body>
     <header class="header">
       <div class="container container-nav">
         <a class="logo" href="./index.html">
           <span class="span__logo">Web</span
           ><span class="span__studio span__studio--color-dark">Studio</span></a
         >
-        <!-- <nav class="navigasion">
-          <div class="menu-container is-open" id="menu-container " data-menu>
+
+        <nav class="navigasion">
+          <div class="menu-container">
             <ul class="navigasion__list list">
               <li class="navigasion__item">
                 <a href="./index.html" class="navigasion__link active"
@@ -68,9 +69,9 @@
               </li>
             </ul>
           </div>
-        </nav> -->
+        </nav>
         <button
-          class="menu-open is-open js-open-menu"
+          class="menu-open"
           type="button"
           aria-expanded="false"
           aria-controls="menu-container"
@@ -89,77 +90,81 @@
           </svg>
         </button>
       </div>
-      <div class="mob-menu">
+      <!------------------- Мобильное меню --------- -->
+      <div class="mob-menu is-hidden">
         <div class="container">
-          <button
-            type="button"
-            class="menu-close is-open js-open-menu"
-            aria-expanded="false"
-            aria-controls="menu-container"
-            data-menu-button
-          >
-            <svg
-              class=""
-              width="40"
-              height="40"
-              aria-label="переключатель мобильного меню"
+          <div class="mob-top">
+            <button
+              class="menu-close"
+              id="mob-menu"
+              type="button"
+              aria-expanded="false"
+              aria-controls="menu-container"
             >
-              <use
-                class="icon-cross"
-                href="./imag/symbol-defs.svg#icon-close1"
-              ></use>
-            </svg>
-          </button>
-          <nav class="mob-menu-nav">
-            <ul class="mob-menu-nav__list list">
-              <li class="mob-menu-nav__item">
-                <a href="./index.html" class="mob-menu-nav__link active"
-                  >Студия</a
+              <svg
+                class=""
+                width="40"
+                height="40"
+                aria-label="переключатель мобильного меню"
+              >
+                <use
+                  class="icon-cross"
+                  href="./imag/symbol-defs.svg#icon-close1"
+                ></use>
+              </svg>
+            </button>
+            <nav class="mob-menu-nav">
+              <ul class="mob-menu-list list">
+                <li class="mob-menu-nav__item">
+                  <a href="./index.html" class="mob-menu-nav__link active"
+                    >Студия</a
+                  >
+                </li>
+                <li class="mob-menu-nav__item">
+                  <a href="./portfolio.html" class="mob-menu-nav__link"
+                    >Портфолио</a
+                  >
+                </li>
+                <li class="mob-menu-nav__item">
+                  <a href="" class="mob-menu-nav__link">Контакты</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <div class="mob-bottom">
+            <ul class="mob-menu-contacts__list list">
+              <li class="mob-menu-contacts__item">
+                <a href="tel:+380961111111" class="mob-menu-contacts__tel"
+                  >+38 096 111 11 11</a
                 >
               </li>
-              <li class="mob-menu-nav__item">
-                <a href="./portfolio.html" class="mob-menu-nav__link"
-                  >Портфолио</a
+              <li class="mob-menu-contacts__item">
+                <a
+                  href="mailto:info@devstudio.com"
+                  class="mob-menu-contacts__mail"
+                  >info@devstudio.com</a
                 >
-              </li>
-              <li class="mob-menu-nav__item">
-                <a href="" class="mob-menu-nav__link">Контакты</a>
               </li>
             </ul>
-          </nav>
-
-          <ul class="mob-menu-contacts__list list">
-            <li class="mob-menu-contacts__item">
-              <a href="tel:+380961111111" class="mob-menu-contacts__tel"
-                >+38 096 111 11 11</a
-              >
-            </li>
-            <li class="mob-menu-contacts__item">
-              <a
-                href="mailto:info@devstudio.com"
-                class="mob-menu-contacts__mail"
-                >info@devstudio.com</a
-              >
-            </li>
-          </ul>
-          <ul class="mob-menu-cocials list">
-            <li class="mob-menu-cocials__item">
-              <a class="mob-menu-cocials__link" href="">Instagram</a>
-            </li>
-            <li class="mob-menu-cocials__item">
-              <a class="mob-menu-cocials__link" href="">Twitter</a>
-            </li>
-            <li class="mob-menu-cocials__item">
-              <a class="mob-menu-cocials__link" href="">Facebook</a>
-            </li>
-            <li class="mob-menu-cocials__item">
-              <a class="mob-menu-cocials__link" href="">LinkedIn</a>
-            </li>
-          </ul>
+            <ul class="mob-menu-cocials list">
+              <li class="mob-menu-cocials__item">
+                <a class="mob-menu-cocials__link" href="">Instagram</a>
+              </li>
+              <li class="mob-menu-cocials__item">
+                <a class="mob-menu-cocials__link" href="">Twitter</a>
+              </li>
+              <li class="mob-menu-cocials__item">
+                <a class="mob-menu-cocials__link" href="">Facebook</a>
+              </li>
+              <li class="mob-menu-cocials__item">
+                <a class="mob-menu-cocials__link" href="">LinkedIn</a>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </header>
-    <!--Основной контент-->
+    <!---------------------Основной контент------------->
     <main>
       <!--Герой-->
       <section class="hero">
@@ -636,9 +641,7 @@
         </form>
       </div>
     </div>
-
-    <script src="./js/modal.js"></script>
-    <script src="./js/menu-btn.js"></script>
     <script src="./js/mobail-menu.js"></script>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
