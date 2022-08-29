@@ -193,7 +193,8 @@ background-image: url(../imag/astronaut.svg);
       </div>
     </header>
 
-/_ heder _/
+<!-- Heder scss -->
+
 .header {
 position: relative;
 background-color: #ffffff;
@@ -201,7 +202,6 @@ border: 1px solid #eeeeee;
 }
 
 .container-nav {
-
 }
 .navigasion {
 display: flex;
@@ -299,16 +299,18 @@ font-size: 14px;
 /_ header ссылки емеил и тел _/
 
 .contacts\_\_list {
-
 @media screen and (min-width: 768px) {
 display: flex;
 flex-direction: column-reverse;
-margin-left: 85px;
-// justify-content: end;
+// margin-left: 85px;
+
+    // justify-content: end;
+
 }
 @media screen and (min-width: 1200px) {
 display: flex;
-flex-direction: row
+flex-direction: row;
+align-items: center;
 gap: 30px;
 }
 }
@@ -386,25 +388,3 @@ font-size: 18px;
 line-height: 1.2;
 letter-spacing: 0.02em;
 }
-
-/_ Эфект ховер навидение _/
-
-// .header-mail:hover,
-// .header-mail:focus,
-// .header-tel-icon:hover,
-// .header-tel-icon:focus {
-// color: #2196f3;
-// transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-// color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-// }
-// так можно и оно работает почему мі проаисали по другому не м
-// .header-item {
-// margin-left: 50px;
-// }
-// .header-list .header-item + .header-item {
-// margin-left: 50px;
-// }
-
-// .header-contact .header-item:not(:last-child) {
-// margin-right: 50px;
-// }
