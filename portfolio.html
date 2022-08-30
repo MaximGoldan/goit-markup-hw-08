@@ -23,38 +23,13 @@
   <body>
     <header class="header">
       <div class="container container-nav">
-        <nav class="navigasion">
-          <a class="logo" href="./index.html">
-            <span class="span__logo">Web</span
-            ><span class="span__studio span__studio--color-dark"
-              >Studio</span
-            ></a
-          >
-          <button
-            type="button"
-            class="menu-btn is-open js-open-menu"
-            aria-expanded="false"
-            aria-controls="menu-container"
-            data-menu-button
-          >
-            <svg
-              class=""
-              width="40"
-              height="40"
-              aria-label="переключатель мобильного меню"
-            >
-              <use
-                class="icon-menu"
-                href="./imag/symbol-defs.svg#icon-menu"
-              ></use>
-              <use
-                class="icon-cross"
-                href="./imag/symbol-defs.svg#icon-close1"
-              ></use>
-            </svg>
-          </button>
+        <a class="logo" href="./index.html">
+          <span class="span__logo">Web</span
+          ><span class="span__studio span__studio--color-dark">Studio</span></a
+        >
 
-          <div class="menu-container is-open" id="menu-container " data-menu>
+        <nav class="navigasion">
+          <div class="menu-container">
             <ul class="navigasion__list list">
               <li class="navigasion__item">
                 <a href="./index.html" class="navigasion__link">Студия</a>
@@ -91,22 +66,97 @@
                 >
               </li>
             </ul>
-            <ul class="heder-cocials list">
-              <li class="heder-cocials__item">
-                <a class="heder-cocials__link" href="">Instagram</a>
+          </div>
+        </nav>
+        <button
+          class="menu-open"
+          type="button"
+          aria-expanded="false"
+          aria-controls="mob-menu"
+        >
+          <svg
+            class=""
+            width="40"
+            height="40"
+            aria-label="переключатель мобильного меню"
+          >
+            <use
+              class="icon-menu"
+              href="./imag/symbol-defs.svg#icon-menu"
+            ></use>
+          </svg>
+        </button>
+      </div>
+
+      <div class="mob-menu is-hidden">
+        <div class="container">
+          <div class="mob-top">
+            <button
+              class="menu-close"
+              id="mob-menu"
+              type="button"
+              aria-expanded="false"
+              aria-controls="mob-menu"
+            >
+              <svg
+                class=""
+                width="40"
+                height="40"
+                aria-label="переключатель мобильного меню"
+              >
+                <use
+                  class="icon-cross"
+                  href="./imag/symbol-defs.svg#icon-close1"
+                ></use>
+              </svg>
+            </button>
+            <nav class="mob-menu-nav">
+              <ul class="mob-menu-list list">
+                <li class="mob-menu-nav__item">
+                  <a href="./index.html" class="mob-menu-nav__link">Студия</a>
+                </li>
+                <li class="mob-menu-nav__item">
+                  <a href="./portfolio.html" class="mob-menu-nav__link active"
+                    >Портфолио</a
+                  >
+                </li>
+                <li class="mob-menu-nav__item">
+                  <a href="" class="mob-menu-nav__link">Контакты</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <div class="mob-bottom">
+            <ul class="mob-menu-contacts__list list">
+              <li class="mob-menu-contacts__item">
+                <a href="tel:+380961111111" class="mob-menu-contacts__tel"
+                  >+38 096 111 11 11</a
+                >
               </li>
-              <li class="heder-cocials__item">
-                <a class="heder-cocials__link" href="">Twitter</a>
+              <li class="mob-menu-contacts__item">
+                <a
+                  href="mailto:info@devstudio.com"
+                  class="mob-menu-contacts__mail"
+                  >info@devstudio.com</a
+                >
               </li>
-              <li class="heder-cocials__item">
-                <a class="heder-cocials__link" href="">Facebook</a>
+            </ul>
+            <ul class="mob-menu-cocials list">
+              <li class="mob-menu-cocials__item">
+                <a class="mob-menu-cocials__link" href="">Instagram</a>
               </li>
-              <li class="heder-cocials__item">
-                <a class="heder-cocials__link" href="">LinkedIn</a>
+              <li class="mob-menu-cocials__item">
+                <a class="mob-menu-cocials__link" href="">Twitter</a>
+              </li>
+              <li class="mob-menu-cocials__item">
+                <a class="mob-menu-cocials__link" href="">Facebook</a>
+              </li>
+              <li class="mob-menu-cocials__item">
+                <a class="mob-menu-cocials__link" href="">LinkedIn</a>
               </li>
             </ul>
           </div>
-        </nav>
+        </div>
       </div>
     </header>
 
@@ -425,5 +475,6 @@
         </form>
       </div>
     </footer>
+    <script src="./js/mobail-menu.js"></script>
   </body>
 </html>

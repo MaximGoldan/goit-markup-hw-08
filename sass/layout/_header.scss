@@ -170,6 +170,9 @@
     color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   &:hover {
     fill: #2196f3;
+    &:focus {
+      fill: #2196f3;
+    }
   }
   @media screen and (min-width: 768px) {
     display: none;
@@ -193,7 +196,6 @@
     justify-content: space-between;
   }
   overflow: auto;
-  // display: none;
 }
 // .menu-close {
 //   display: block;
@@ -203,7 +205,11 @@
 //   border: none;
 //   background-color: #fff;
 // }
-
+.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
 .mob-menu-nav__item:not(:last-child) {
   margin-bottom: 32px;
 }
@@ -246,6 +252,8 @@
   display: flex;
   gap: 10px;
   margin-bottom: 50px;
+  justify-content: space-around;
+  flex-wrap: nowrap;
 }
 .mob-menu-cocials__item {
   &:not(:first-child) {
@@ -261,4 +269,8 @@
   letter-spacing: 0.02em;
 
   color: #2196f3;
+  @media screen and (max-width: 380px) {
+    font-size: 12px;
+    line-height: calc(22 / 12);
+  }
 }
