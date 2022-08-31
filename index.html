@@ -234,15 +234,39 @@
           <h2 class="work__title">Чем мы занимаемся</h2>
           <ul class="work__list list">
             <li class="work__item">
-              <img srcset="" src="imag/occupation_one.jpg" alt="" width="370" />
+              <img
+                srcset="
+                  ./imag/occupation_one.jpg    1x,
+                  ./imag/occupation_one-2x.jpg 2x
+                "
+                src="imag/occupation_one.jpg"
+                alt=""
+                width="370"
+              />
               <p class="work__text">Десктопні додатки</p>
             </li>
             <li class="work__item">
-              <img src="imag/occupation_two.jpg" alt="" width="370" />
+              <img
+                srcset="
+                  ./imag/occupation_two.jpg    1x,
+                  ./imag/occupation_two-2x.jpg 2x
+                "
+                src="imag/occupation_two.jpg"
+                alt=""
+                width="370"
+              />
               <p class="work__text">Мобільні додатки</p>
             </li>
             <li class="work__item">
-              <img src="imag/occupation_three.jpg" alt="" width="370" />
+              <img
+                srcset="
+                  ./imag/occupation_three.jpg    1x,
+                  ./imag/occupation_three-2x.jpg 2x
+                "
+                src="imag/occupation_three.jpg"
+                alt=""
+                width="370"
+              />
               <p class="work__text">Дизайнерські рішення</p>
             </li>
           </ul>
@@ -254,6 +278,22 @@
           <h2 class="team__title">Наша команда</h2>
           <ul class="team__list list">
             <li class="team__item">
+              <picture>
+                <source srcset="
+                ./imag/igor-desc-2x.jpg 2x, 
+                ./imag/igor-desc.jpg 1x,"
+                media="min-width: 1200px">
+              </picture>
+                <source srcset="
+                ./imag/igor-tablet-2x.jpg 2x, 
+                ./imag/igor-tablet.jpg 1x,"
+                media="min-width: 768px">
+              </picture>
+                <source srcset="
+                ./imag/igor-mob-2x.jpg 2x, 
+                ./imag/igor-mob.jpg 1x,"
+                media="max-width: 767px">
+              </picture>
               <img src="imag/Igor.jpg" alt="Игорь Демьяненко" width="260" />
               <h3 class="team-title__name">Игорь Демьяненко</h3>
               <p class="team__text">Product Designer</p>
@@ -328,6 +368,19 @@
             </li>
 
             <li class="team__item">
+              <picture>
+                <source srcset="./imag/nicolai-desc-2x.jpg 2x, 
+                ./imag/nicolai-desc.jpg 1x,"
+                media="min-width: 1200px">
+              </picture>
+                <source srcset="./imag/nicolai-tablet-2x.jpg 2x, 
+                ./imag/nicolai-tablet.jpg 1x,"
+                media="min-width: 768px">
+              </picture>
+                <source srcset="./imag/nicolai-mob-2x.jpg 2x, 
+                ./imag/nicolai-mob.jpg 1x,"
+                media="max-width: 767px">
+              </picture>
               <img src="imag/nicolai.jpg" alt="Николай Тарасов" width="260" />
               <h3 class="team-title__name">Николай Тарасов</h3>
               <p class="team__text">Marketing</p>
