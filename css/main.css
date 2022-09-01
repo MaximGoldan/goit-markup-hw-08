@@ -354,6 +354,11 @@ body.modal-open {
 .checkbox:focus + .checkbox:checked + .checkbox-label span {
   border-color: #2196f3;
 }
+@media screen and (min-width: 480px) {
+  .checkbox-label {
+    white-space: nowrap;
+  }
+}
 @media screen and (min-width: 1200px) {
   .checkbox-label {
     font-size: 14px;
@@ -1339,6 +1344,11 @@ body.modal-open {
   color: #212121;
   margin-top: 0px;
   margin-bottom: 4px;
+}
+@media screen and (min-width: 480px) {
+  .portfolio__title {
+    white-space: nowrap;
+  }
 }
 
 .portfolio__text {

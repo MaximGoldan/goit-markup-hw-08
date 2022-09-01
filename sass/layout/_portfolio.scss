@@ -116,11 +116,14 @@
 .portfolio__title {
   font-weight: 700;
   font-size: 18px;
-  line-height: 2;
+  line-height: calc(36 / 18);
   letter-spacing: 0.06em;
   color: #212121;
   margin-top: 0px;
   margin-bottom: 4px;
+  @media screen and (min-width: 480px) {
+    white-space: nowrap;
+  }
 }
 
 .portfolio__text {
